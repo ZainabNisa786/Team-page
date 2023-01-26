@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body{
+  
+    row-gap: 2rem;
+}
+/* info top page */
+#info{
+
+    min-height: 300px;
+    width: 100%;
+   padding-top: 2rem;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   padding-left: 1rem;
+   line-height: 1.5;
+}
+#info h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#info h2{
+    font-weight: bold;
+}
+#info div{
+    display: flex;
+    flex-direction: column;
+}
+#info p{
+   font-size: 1.3rem;
+   font-weight: 500;
+}
+/* team gallery */
+img{
+    width:150px;
+}
+#gallery{
+    color: aliceblue;
+    font-family:'Courier New', Courier, monospace;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1fr;
+    margin: auto;
+    align-items: center;
+    background-color: rgb(50, 52, 51);
+    padding-bottom: 2rem;
+}
+.pict{
+    width: 50%;
+    position: relative;
+}
+.one{
+    padding-top: 10px;
+}
+.two{
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    rotate: 90deg;
+    top: 5rem;
+    left: 6rem;
+    letter-spacing: 1.5px;
+}
+.downp{
+    top: 10rem;
+}
+.down{
+    padding-top: 5rem;
+}
+/* footer */
+footer{
+    /* min-height: 5vh; */
+    padding: 2rem;
+    color:rgb(148, 134, 134);
+    text-align: center;
+}
+/*media queries  */
+@media only screen and (min-width:730px){
+    
+    #info{
+        min-height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4rem;
+    }
+    #gallery{
+        width: 100%;
+    }
+    .pict{
+        width: 28%;
+    }
+}
+@media only screen and (min-width:1030px){
+    img{
+        width: 180px;
+    }
+    .two{
+        left:8.5rem ;
+    }
+    #info{
+        gap: 8rem;
+    }
+    #gallery{
+        width: 80%;
+    }
+    .pict{
+         width: 33%;
+    }
+    #info h1{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    #info h2{
+        font-size: 2rem;
+    }
+    #info p{
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (min-width:550px) {
+        #gallery{
+            padding-left: 5rem;
+        }
+}
+
